@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ItemCount from '../ItemCount/ItemCounts';
+ 
 
 const ItemDetail = ({ item }) => {
   return (
@@ -10,6 +12,7 @@ const ItemDetail = ({ item }) => {
         <p>{item.descripcion}</p>
         <p>$ {item.precio}</p>
         <p>Cantidad: {item.stock}</p>
+        <Link to="/">Home</Link>
       </div>
       <div>
         <ItemCount stockItems={item.stock} />
