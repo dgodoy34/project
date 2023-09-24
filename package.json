@@ -15,11 +15,14 @@
     "sweetalert2": "^11.7.28",
     "web-vitals": "^2.1.4"
   },
+  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -27,6 +30,9 @@
       "react-app/jest"
     ]
   },
+
+  "homepage": "https://github.com/dgodoy34/project",
+
   "browserslist": {
     "production": [
       ">0.2%",
@@ -40,6 +46,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/preset-react": "^7.22.15"
+    "@babel/preset-react": "^7.22.15",
+    "gh-pages": "^6.0.0"
   }
 }
