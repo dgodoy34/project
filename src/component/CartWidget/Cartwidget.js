@@ -1,12 +1,16 @@
 import React from 'react'
 
-const Cartwidget = () => {
+const Cartwidget = ({ count }) => {
   return (
-    <div className='icono-carrito'>
-        <i class="bi bi-cart4 icono-carrito"></i>
-        <span>0</span>
-    </div>
+    <div style={{ marginLeft: 'auto' }}>
+    <i className="bi bi-cart4"></i>
+    <span>{count}</span>
+  </div>
+  
+  
+  
+     
   )
 }
 
-export default Cartwidget
+export default Cartwidget;

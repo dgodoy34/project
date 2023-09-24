@@ -4,8 +4,7 @@ import { useParams } from 'react-router-dom';
 import arrayProductos from '../../Json/arrayProductos.json';
 import ItemList from '../ItemList/ItemList';
 
-
-const ItemListContainer = () => {
+const ItemListContainer = ({carritoCount}) => {
      const [item, setItem] = useState([]);
      const {id} = useParams();
 
@@ -30,6 +29,7 @@ const ItemListContainer = () => {
     <div className='container'>
       <div className='row'>
        <ItemList item={item}/>
+      
       </div>
       
     </div>
