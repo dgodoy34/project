@@ -12,10 +12,10 @@
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
+    "react-spinners": "^0.13.8",
     "sweetalert2": "^11.7.28",
     "web-vitals": "^2.1.4"
   },
-  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -30,9 +30,7 @@
       "react-app/jest"
     ]
   },
-
   "homepage": "https://github.io/dgodoy34/project",
-
   "browserslist": {
     "production": [
       ">0.2%",
