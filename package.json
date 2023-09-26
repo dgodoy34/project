@@ -30,7 +30,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://github.io/dgodoy34/project",
+  
   "browserslist": {
     "production": [
       ">0.2%",
