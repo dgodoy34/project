@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
 
   useEffect(()=>{
     const queryDb = getFirestore();
-    const queryDoc = doc(queryDb, 'products', id);
+    const queryDoc = doc(queryDb, 'product', id);
     getDoc(queryDoc).then((res)=>setItem({id: res.id, ...res.data()}));
     
       console.log(`No se encontró ningún item con el ID ${id}`);
