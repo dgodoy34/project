@@ -1,13 +1,14 @@
-import React from 'react';
+import React from 'react'
 
-const CartWidget = ({ count }) => {
+const Cartwidget = ({ count }) => {
+  const cantidad = parseInt(count, 10) || 0; 
   return (
     <div style={{ marginLeft: 'auto' }}>
       <i className="bi bi-cart4"></i>
-      <span>{count}</span>
+      <span>{cantidad}</span>
     </div>
-  );
-};
+  )
+}
 
-export default CartWidget;
+export default Cartwidget;
 
