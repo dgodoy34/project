@@ -12,7 +12,7 @@ const ItemDetail = ({ item }) => {
         <p>{item.description}</p>
         <p>$ {item.price}</p>
         <p>Cantidad: {item.stock}</p>
-        <Link to="/">Home</Link>
+        <Link to="/Productos">Productos</Link>
       </div>
       <div>
         <ItemCount stockItems={item.stock} />
