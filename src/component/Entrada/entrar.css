@@ -103,3 +103,9 @@ body {
 .whatsapp a img {
   width: 50px;
 }
+
+.cartWidget {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
