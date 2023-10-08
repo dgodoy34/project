@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo1 from '../CartWidget/Logo1.js'
-import Cartwidget from '../CartWidget/Cartwidget.js'
+import { Link, NavLink } from "react-router-dom";
+import CartWidget from '../CartWidget/CartWidget.js'
 
 const Navbar = () => {
     return (
@@ -24,8 +25,8 @@ const Navbar = () => {
                                 <a className="nav-link" href="#">Contacto</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/"><Cartwidget /></a>
-                            </li>
+                                        <Link className="justify-content-end  align-items-center" to={"/cart"}><CartWidget/></Link>
+                                        </li>
                         </ul>
                     </div>
                 </div>

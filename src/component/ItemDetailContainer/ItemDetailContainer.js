@@ -34,7 +34,7 @@ const ItemDetailContainer = () => {
       .then((res) => {
         setItem({ id: res.id, ...res.data() });
         setIsLoading(false);
-      })
+      },[id])
       .catch((error) => {
         console.error(`Error al cargar los datos: ${error}`);
         setIsLoading(false);

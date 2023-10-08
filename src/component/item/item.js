@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import "../Entrada/entrar.css"
 
 
-const Item = ({item}) => {
+const item = ({item}) => {
   return (
     <Link to={"/item/" + item.id} className='text-decoration-none'>
       <div className='container'>
@@ -18,4 +18,4 @@ const Item = ({item}) => {
   )
 }
 
-export default Item;
+export default item;
