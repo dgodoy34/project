@@ -3,29 +3,37 @@ import { Link } from 'react-router-dom';
 import { useCartContext } from '../../Context/CartContext';
 import ItemCart from '../ItemCart/ItemCart';
 
+
 const Cart = () => {
   const { cart, totalPrice } = useCartContext();
- 
+
   if (cart.length === 0) {
     return (
       <>
         <p>No hay elementos en el carrito</p>
-        <Link to="/">Hacer compras</Link>
+        <Link to="/" className="btn btn-primary">
+          Volver al Home
+        </Link>
       </>
     );
   }
 
   return (
     <>
-      {cart.map((product) => (
-        <ItemCart key={product.id} product={product} />
-      ))}
-      <p>total: $ {totalPrice()}</p>
-   
-      <Link to="/checkout">
-        {' '}
-        <button className="btn-total">Finalizar Compra</button>
-      </Link>
+      <div className='cart-container'>
+        {cart.map((producto) => (
+          <ItemCart key={producto.id} producto={producto} />
+        ))}
+      </div>
+      <div className='price'>
+      <p className='total-price'>total: $ {totalPrice()}</p>
+
+      <div className='checkout-btn-container'>
+        <Link to="/checkout" className="btn btn-success">
+          Confirmar Compra
+        </Link>
+      </div>
+      </div>
     </>
   );
 };

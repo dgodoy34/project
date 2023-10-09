@@ -1,0 +1,29 @@
+  
+  .total-price {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .checkout-btn-container {
+    margin-top: 20px;
+  }
+
+  .itemCart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+} 
+
+.itemImage{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+  grid-gap: .7em;
+}
+
+.itemImage {
+  width: 25%; /* Establece el ancho al 100% */
+}
+
+  
