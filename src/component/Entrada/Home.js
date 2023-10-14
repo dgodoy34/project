@@ -53,7 +53,7 @@ const Home = () => {
       ) : (
         <div className='entrar'>
           <h1>BIENVENIDOS</h1>
-          <p>Si sos mayor de 18 años ingresa a nuestro sitio sino andate jajaja</p>
+          <p>Si sos mayor de 18 años ingresa a nuestro sitio </p>
           <Link to="/productos">
             <button className="btn btn-primary" onClick={handleEntrarClick}>Entrar</button>
           </Link>
